@@ -36,7 +36,7 @@ SandboxVars = {
     -- 23 = 21 Hours
     -- 24 = 22 Hours
     -- 25 = 23 Hours
-    DayLength = 3,
+    DayLength = 4,
     StartYear = 1,
     -- Default=July
     -- 1 = January
@@ -50,8 +50,8 @@ SandboxVars = {
     -- 9 = September
     -- 10 = October
     -- 11 = November
-    StartMonth = 7,
-    StartDay = 9,
+    StartMonth = 5,
+    StartDay = 1,
     -- Default=9 AM
     -- 1 = 7 AM
     -- 2 = 9 AM
@@ -61,7 +61,7 @@ SandboxVars = {
     -- 6 = 9 PM
     -- 7 = 12 AM
     -- 8 = 2 AM
-    StartTime = 2,
+    StartTime = 1,
     -- Default=0-30 Days
     -- 1 = Instant
     -- 2 = 0-30 Days
@@ -83,7 +83,7 @@ SandboxVars = {
     -- Minimum=-1 Maximum=2147483647 Default=14
     WaterShutModifier = 14,
     -- Minimum=-1 Maximum=2147483647 Default=14
-    ElecShutModifier = 14,
+    ElecShutModifier = 7,
     -- Default=Rare (loot x 0.6)
     -- 1 = None (loot x 0)
     -- 2 = Insanely Rare (loot x 0.05)
@@ -418,7 +418,7 @@ SandboxVars = {
     -- 2 = Very Low
     -- 3 = Low
     -- 4 = Normal
-    CarSpawnRate = 4,
+    CarSpawnRate = 5,
     -- Governs the chances of finding vehicles with gas in the tank. Default=Low
     -- 1 = Low
     -- 2 = Normal
@@ -460,7 +460,7 @@ SandboxVars = {
     -- 2 = Low
     -- 3 = Normal
     -- 4 = High
-    CarDamageOnImpact = 2,
+    CarDamageOnImpact = 3,
     -- Damage received by the player from the car in a collision. Default=None
     -- 1 = None
     -- 2 = Low
@@ -639,7 +639,7 @@ SandboxVars = {
     ExceptionsList = "Base.Sledgehammer;Base.Sledgehammer2;Base.Generator",
     -- A semicolon-separated list of specific multipliers for specific items.Example: Base.Sledgehammer=5;Base.Sledgehammer2=5;Base.Saw=0.5;Base.GardenSaw=0.5;Base.Hammer=0.1;Base.NailsBox=2
     -- These individual multipliers are applied on top of all other multipliers, and even if the item is in the exceptions list
-    SpecificItemsList = "Base.Cigarettes:1;Base.Sledgehammer:1;Base.Sledgehammer2:1;Base.Generator:0.02",
+    SpecificItemsList = "Base.Cigarettes:1;Base.Sledgehammer:1;Base.Sledgehammer2:0.2;Base.Generator:0.01",
     Map = {
         AllowMiniMap = false,
         AllowWorldMap = true,
@@ -731,17 +731,17 @@ SandboxVars = {
     },
     ZombieConfig = {
         -- Set by the "Zombie Count" population option. 4.0 = Insane, Very High = 3.0, 2.0 = High, 1.0 = Normal, 0.35 = Low, 0.0 = None. Minimum=0.00 Maximum=4.00 Default=1.00
-        PopulationMultiplier = 1.6,
+        PopulationMultiplier = 1.5,
         -- Adjusts the desired population at the start of the game. Minimum=0.00 Maximum=4.00 Default=1.00
         PopulationStartMultiplier = 1.0,
         -- Adjusts the desired population on the peak day. Minimum=0.00 Maximum=4.00 Default=1.50
         PopulationPeakMultiplier = 1.5,
         -- The day when the population reaches it's peak. Minimum=1 Maximum=365 Default=28
-        PopulationPeakDay = 28,
+        PopulationPeakDay = 14,
         -- The number of hours that must pass before zombies may respawn in a cell. If zero, spawning is disabled. Minimum=0.00 Maximum=8760.00 Default=72.00
         RespawnHours = 72.0,
         -- The number of hours that a chunk must be unseen before zombies may respawn in it. Minimum=0.00 Maximum=8760.00 Default=16.00
-        RespawnUnseenHours = 16.0,
+        RespawnUnseenHours = 32.0,
         -- The fraction of a cell's desired population that may respawn every RespawnHours. Minimum=0.00 Maximum=1.00 Default=0.10
         RespawnMultiplier = 0.0,
         -- The number of hours that must pass before zombies migrate to empty parts of the same cell. If zero, migration is disabled. Minimum=0.00 Maximum=8760.00 Default=12.00
