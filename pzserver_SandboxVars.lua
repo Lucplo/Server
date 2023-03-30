@@ -747,7 +747,7 @@ SandboxVars = {
         -- The number of hours that must pass before zombies migrate to empty parts of the same cell. If zero, migration is disabled. Minimum=0.00 Maximum=8760.00 Default=12.00
         RedistributeHours = 0.0,
         -- The distance a zombie will try to walk towards the last sound it heard. Minimum=10 Maximum=1000 Default=100
-        FollowSoundDistance = 60,
+        FollowSoundDistance = 70,
         -- The size of groups real zombies form when idle. Zero means zombies don't form groups. Groups don't form inside buildings or forest zones. Minimum=0 Maximum=1000 Default=20
         RallyGroupSize = 20,
         -- The distance real zombies travel to form groups when idle. Minimum=5 Maximum=50 Default=20
